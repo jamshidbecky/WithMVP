@@ -30,15 +30,14 @@ final class AsosiyPresenter: AsosiyPresenterable {
     ],
             useful: [
                 UsefulDM(imageName: "w1"),
-            UsefulDM(imageName: "w2"),
-            UsefulDM(imageName: "w3"),
-            UsefulDM(imageName: "w4"),
-            UsefulDM(imageName: "w5"),
-            UsefulDM(imageName: "w6"),
-            UsefulDM(imageName: "w7"),
-            UsefulDM(imageName: "w8"),
-            UsefulDM(imageName: "w9"),
-            
+                UsefulDM(imageName: "w2"),
+                UsefulDM(imageName: "w3"),
+                UsefulDM(imageName: "w4"),
+                UsefulDM(imageName: "w5"),
+                UsefulDM(imageName: "w6"),
+                UsefulDM(imageName: "w7"),
+                UsefulDM(imageName: "w8"),
+                UsefulDM(imageName: "w9"),
         ],
         transactionHistory: [
             TransactionHistoryDM(date: "27 yanvar", time: "19:00", howTransaction: "O'tkazma", value: "500 UZS", currency: "UZS"),

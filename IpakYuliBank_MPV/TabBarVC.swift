@@ -23,7 +23,7 @@ class TabBarVC: UITabBarController {
         servicesVC.tabBarItem.title = "Xizmatlar"
         servicesVC.tabBarItem.image = UIImage(systemName: "square.stack.3d.up")
         
-        let paymentsVC = UINavigationController(rootViewController: TulovlarVC())
+        let paymentsVC = UINavigationController(rootViewController: PaymentVC())
         paymentsVC.tabBarItem.title = "To'lovlar"
         paymentsVC.tabBarItem.image = UIImage(systemName: "creditcard.and.123")
         

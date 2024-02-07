@@ -1,24 +1,18 @@
 //
-//  BoshqaVC.swift
+//  PaymentVC.swift
 //  IpakYuliBank_MPV
 //
-//  Created by locky on 24/01/24.
+//  Created by locky on 07/02/24.
 //
 
 import UIKit
 
-enum OtherSectionType: Int, CaseIterable {
-    case top
-    case info
-    case setting
-}
-
-final class OtherVC: UIViewController {
+final class PaymentVC: UIViewController {
     
-    let presenter: OtherPresenterable
+    let presenter: PaymentsPresenterable
     
     init() {
-        self.presenter = OtherPresenter()
+        self.presenter = PaymentsPresenter()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -26,31 +20,35 @@ final class OtherVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let otherView = OtherView()
+    private lazy var paymentsView: PaymentsView = {
+        let v = PaymentsView()
+        return v
+    }()
     
     override func loadView() {
         super.loadView()
-        view = otherView
+        view = paymentsView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Boshqa"
-        view.backgroundColor = .systemGray6
+        title = "To'lovlar"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonTapped))
+        navigationItem.rightBarButtonItem?.tintColor = .black
         
-        otherView.otherCollectionView.delegate = self
-        otherView.otherCollectionView.dataSource = self
+        paymentsView.paymentsCollectionView.delegate = self
+        paymentsView.paymentsCollectionView.dataSource = self
     }
     
+    @objc private func searchButtonTapped(){
+        
+    }
 }
 
 
-extension OtherVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        OtherSectionType.allCases.count
-    }
+extension PaymentVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        presenter.numberOfItemsInSection(for: section)
+        presenter.numberOfItemsInSection(for: 12)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -60,4 +58,6 @@ extension OtherVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         presenter.viewForSupplementaryElementOfKind(collectionView: collectionView, indexPath: indexPath)
     }
+    
+    
 }

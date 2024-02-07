@@ -32,7 +32,7 @@ final class ServicesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Boshqa"
+        title = "Xizmatlar"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonTapped))
         navigationItem.rightBarButtonItem?.tintColor = .black
         
