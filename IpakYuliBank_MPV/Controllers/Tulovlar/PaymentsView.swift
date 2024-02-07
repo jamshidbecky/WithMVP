@@ -14,8 +14,7 @@ final class PaymentsView: UIView {
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
-        
-        
+        collectionView.isScrollEnabled = false
         collectionView.backgroundColor = .clear
         return collectionView
     }()
@@ -67,9 +66,7 @@ final class PaymentsView: UIView {
             section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
             
             section.boundarySupplementaryItems = []
-            
-            let layout = UICollectionViewCompositionalLayout(section: section)
-            
+                        
             return section
         }
         return layout

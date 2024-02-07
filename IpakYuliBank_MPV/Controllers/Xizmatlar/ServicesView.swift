@@ -67,9 +67,7 @@ final class ServicesView: UIView {
             section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
             
             section.boundarySupplementaryItems = []
-            
-            let layout = UICollectionViewCompositionalLayout(section: section)
-            
+                        
             return section
         }
         return layout

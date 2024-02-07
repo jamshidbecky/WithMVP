@@ -35,7 +35,7 @@ final class PaymentsPresenter: PaymentsPresenterable {
     
     func cellForItemAt(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BankServiceCvCell", for: indexPath) as! BankServiceCvCell
-        cell.prepare(dm: data1[indexPath.item])
+        cell.prepare(dm: data1.randomElement()!)
         return cell
     }
     
