@@ -127,6 +127,7 @@ final class AsosiyVC: UIViewController {
             self.refreshControl.endRefreshing()
         }
     }
+    
 }
 
 extension AsosiyVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {

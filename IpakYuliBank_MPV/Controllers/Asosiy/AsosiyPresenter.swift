@@ -15,7 +15,7 @@ protocol AsosiyPresenterable: AnyObject {
 
 final class AsosiyPresenter: AsosiyPresenterable {
     
-    var datas = DataModel(
+    var datas = MainVCDataModel(
         bankServices: [
             BankServiceDM(imgName: "pencil.circle", title: "Kartaga o'tkazish"),
             BankServiceDM(imgName: "folder.badge.minus", title: "MoneySend"),

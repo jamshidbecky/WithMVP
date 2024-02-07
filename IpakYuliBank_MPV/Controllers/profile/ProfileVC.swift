@@ -15,7 +15,7 @@ final class ProfileVC: UIViewController {
         sV.showsVerticalScrollIndicator = false
         return sV
     }()
-    
+        
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .vertical, distribution: .fill, align: .fill, spacing: 16)
     }()

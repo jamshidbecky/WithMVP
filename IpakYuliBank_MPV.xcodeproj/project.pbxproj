@@ -20,15 +20,15 @@
 		044530692B693E54000E830B /* UsefulHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530682B693E54000E830B /* UsefulHeader.swift */; };
 		0445306C2B69441B000E830B /* FavoritesHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445306B2B69441B000E830B /* FavoritesHeader.swift */; };
 		0445306E2B694427000E830B /* FavoritesCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445306D2B694427000E830B /* FavoritesCvCell.swift */; };
-		044530712B698AE7000E830B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530702B698AE7000E830B /* DataModel.swift */; };
+		044530712B698AE7000E830B /* MainVCDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530702B698AE7000E830B /* MainVCDataModel.swift */; };
 		044530742B699383000E830B /* TransactionHistoryCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530732B699383000E830B /* TransactionHistoryCvCell.swift */; };
 		044530762B69938F000E830B /* TransactionHistoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530752B69938F000E830B /* TransactionHistoryHeader.swift */; };
 		044530792B69980A000E830B /* MyCardsCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530782B69980A000E830B /* MyCardsCvCell.swift */; };
 		0445307B2B699817000E830B /* MyCardsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445307A2B699817000E830B /* MyCardsHeader.swift */; };
 		0445307D2B69A4BB000E830B /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445307C2B69A4BB000E830B /* OtherView.swift */; };
 		0445307F2B69A4D8000E830B /* OtherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445307E2B69A4D8000E830B /* OtherPresenter.swift */; };
-		044530812B69A9AE000E830B /* NoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530802B69A9AE000E830B /* NoHeader.swift */; };
-		044530842B6A4208000E830B /* OthersCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530832B6A4208000E830B /* OthersCvCell.swift */; };
+		044530812B69A9AE000E830B /* InfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530802B69A9AE000E830B /* InfoHeader.swift */; };
+		044530842B6A4208000E830B /* TopCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530832B6A4208000E830B /* TopCVCell.swift */; };
 		044530862B6A65B8000E830B /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530852B6A65B8000E830B /* ServicesView.swift */; };
 		044530882B6A682C000E830B /* ServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530872B6A682C000E830B /* ServicesPresenter.swift */; };
 		045FD9462B6ADEC3007E8FED /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FD9452B6ADEC3007E8FED /* ProfileVC.swift */; };
@@ -58,6 +58,10 @@
 		04D12C5F2B6C0D7A00700282 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C5E2B6C0D7A00700282 /* NewsCell.swift */; };
 		04D12C812B7125D300700282 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C802B7125D300700282 /* NewsView.swift */; };
 		04D12C832B7125DF00700282 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C822B7125DF00700282 /* NotificationsView.swift */; };
+		04D12CAF2B73696700700282 /* SettingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CAE2B73696700700282 /* SettingHeader.swift */; };
+		04D12CB12B736B5D00700282 /* OtherVCDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CB02B736B5D00700282 /* OtherVCDataModel.swift */; };
+		04D12CB32B736F2300700282 /* InfoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CB22B736F2300700282 /* InfoCVCell.swift */; };
+		04D12CB52B736F4400700282 /* SettingCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CB42B736F4400700282 /* SettingCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,15 +78,15 @@
 		044530682B693E54000E830B /* UsefulHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulHeader.swift; sourceTree = "<group>"; };
 		0445306B2B69441B000E830B /* FavoritesHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeader.swift; sourceTree = "<group>"; };
 		0445306D2B694427000E830B /* FavoritesCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCvCell.swift; sourceTree = "<group>"; };
-		044530702B698AE7000E830B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		044530702B698AE7000E830B /* MainVCDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCDataModel.swift; sourceTree = "<group>"; };
 		044530732B699383000E830B /* TransactionHistoryCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryCvCell.swift; sourceTree = "<group>"; };
 		044530752B69938F000E830B /* TransactionHistoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryHeader.swift; sourceTree = "<group>"; };
 		044530782B69980A000E830B /* MyCardsCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsCvCell.swift; sourceTree = "<group>"; };
 		0445307A2B699817000E830B /* MyCardsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsHeader.swift; sourceTree = "<group>"; };
 		0445307C2B69A4BB000E830B /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		0445307E2B69A4D8000E830B /* OtherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPresenter.swift; sourceTree = "<group>"; };
-		044530802B69A9AE000E830B /* NoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHeader.swift; sourceTree = "<group>"; };
-		044530832B6A4208000E830B /* OthersCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersCvCell.swift; sourceTree = "<group>"; };
+		044530802B69A9AE000E830B /* InfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHeader.swift; sourceTree = "<group>"; };
+		044530832B6A4208000E830B /* TopCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCVCell.swift; sourceTree = "<group>"; };
 		044530852B6A65B8000E830B /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		044530872B6A682C000E830B /* ServicesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPresenter.swift; sourceTree = "<group>"; };
 		045FD9452B6ADEC3007E8FED /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -114,6 +118,10 @@
 		04D12C5E2B6C0D7A00700282 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		04D12C802B7125D300700282 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		04D12C822B7125DF00700282 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		04D12CAE2B73696700700282 /* SettingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeader.swift; sourceTree = "<group>"; };
+		04D12CB02B736B5D00700282 /* OtherVCDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCDataModel.swift; sourceTree = "<group>"; };
+		04D12CB22B736F2300700282 /* InfoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCVCell.swift; sourceTree = "<group>"; };
+		04D12CB42B736F4400700282 /* SettingCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +199,8 @@
 		0445306F2B6988FE000E830B /* DM */ = {
 			isa = PBXGroup;
 			children = (
-				044530702B698AE7000E830B /* DataModel.swift */,
+				044530702B698AE7000E830B /* MainVCDataModel.swift */,
+				04D12CB02B736B5D00700282 /* OtherVCDataModel.swift */,
 			);
 			path = DM;
 			sourceTree = "<group>";
@@ -217,8 +226,11 @@
 		044530822B6A41E9000E830B /* BoshqaSubitems */ = {
 			isa = PBXGroup;
 			children = (
-				044530802B69A9AE000E830B /* NoHeader.swift */,
-				044530832B6A4208000E830B /* OthersCvCell.swift */,
+				04D12CB22B736F2300700282 /* InfoCVCell.swift */,
+				04D12CB42B736F4400700282 /* SettingCVCell.swift */,
+				044530832B6A4208000E830B /* TopCVCell.swift */,
+				044530802B69A9AE000E830B /* InfoHeader.swift */,
+				04D12CAE2B73696700700282 /* SettingHeader.swift */,
 			);
 			path = BoshqaSubitems;
 			sourceTree = "<group>";
@@ -253,14 +265,14 @@
 		046D9CD82B61283400370BA3 /* IpakYuliBank_MPV */ = {
 			isa = PBXGroup;
 			children = (
-				0445306F2B6988FE000E830B /* DM */,
 				046D9CD92B61283400370BA3 /* AppDelegate.swift */,
 				046D9CFD2B6129E000370BA3 /* TabBarVC.swift */,
-				046D9CFF2B61363E00370BA3 /* Helper */,
-				0445305D2B685AD2000E830B /* Controllers */,
 				046D9CE22B61283600370BA3 /* Assets.xcassets */,
 				046D9CE42B61283600370BA3 /* LaunchScreen.storyboard */,
 				046D9CE72B61283600370BA3 /* Info.plist */,
+				0445306F2B6988FE000E830B /* DM */,
+				046D9CFF2B61363E00370BA3 /* Helper */,
+				0445305D2B685AD2000E830B /* Controllers */,
 			);
 			path = IpakYuliBank_MPV;
 			sourceTree = "<group>";
@@ -441,6 +453,7 @@
 				044530792B69980A000E830B /* MyCardsCvCell.swift in Sources */,
 				046D9CF62B61292D00370BA3 /* ServicesVC.swift in Sources */,
 				0445306E2B694427000E830B /* FavoritesCvCell.swift in Sources */,
+				04D12CB32B736F2300700282 /* InfoCVCell.swift in Sources */,
 				0445305C2B685375000E830B /* BankServiceHeader.swift in Sources */,
 				046D9CFA2B61294400370BA3 /* AyirboshlashVC.swift in Sources */,
 				044530742B699383000E830B /* TransactionHistoryCvCell.swift in Sources */,
@@ -448,7 +461,7 @@
 				044530672B693E3E000E830B /* UsefulCvCell.swift in Sources */,
 				047271E72B613C5100BC6443 /* Color.swift in Sources */,
 				046D9CF82B61293B00370BA3 /* TulovlarVC.swift in Sources */,
-				044530812B69A9AE000E830B /* NoHeader.swift in Sources */,
+				044530812B69A9AE000E830B /* InfoHeader.swift in Sources */,
 				044530882B6A682C000E830B /* ServicesPresenter.swift in Sources */,
 				04D12C562B6C055400700282 /* NotificationVC.swift in Sources */,
 				045FD9482B6ADECD007E8FED /* ProfileView.swift in Sources */,
@@ -457,6 +470,7 @@
 				046D9D032B6138B900370BA3 /* AsosiyView.swift in Sources */,
 				044530602B690DE5000E830B /* PhoneNumberCvCell.swift in Sources */,
 				0445306C2B69441B000E830B /* FavoritesHeader.swift in Sources */,
+				04D12CAF2B73696700700282 /* SettingHeader.swift in Sources */,
 				044530512B683A29000E830B /* MyHomeCvCell.swift in Sources */,
 				04D12C502B6B945D00700282 /* IdentificationView.swift in Sources */,
 				046D9CFC2B61294D00370BA3 /* OtherVC.swift in Sources */,
@@ -467,13 +481,15 @@
 				045FD94C2B6AE8C8007E8FED /* UserView.swift in Sources */,
 				0445307D2B69A4BB000E830B /* OtherView.swift in Sources */,
 				04D12C812B7125D300700282 /* NewsView.swift in Sources */,
+				04D12CB52B736F4400700282 /* SettingCVCell.swift in Sources */,
 				04D12C5A2B6C056C00700282 /* NotificationPresenter.swift in Sources */,
-				044530712B698AE7000E830B /* DataModel.swift in Sources */,
+				044530712B698AE7000E830B /* MainVCDataModel.swift in Sources */,
 				04D12C5F2B6C0D7A00700282 /* NewsCell.swift in Sources */,
-				044530842B6A4208000E830B /* OthersCvCell.swift in Sources */,
+				044530842B6A4208000E830B /* TopCVCell.swift in Sources */,
 				044530552B684493000E830B /* LabelPlusButton.swift in Sources */,
 				047271EB2B613DC700BC6443 /* Ex+UIStackView.swift in Sources */,
 				04D12C532B6B9F4D00700282 /* SameCellButView.swift in Sources */,
+				04D12CB12B736B5D00700282 /* OtherVCDataModel.swift in Sources */,
 				044530532B6841CA000E830B /* MyHomeHeader.swift in Sources */,
 				044530692B693E54000E830B /* UsefulHeader.swift in Sources */,
 				044530622B690DF3000E830B /* PhoneNumberHeader.swift in Sources */,

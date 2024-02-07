@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NoHeader: UICollectionReusableView {
+final class InfoHeader: UICollectionReusableView {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .horizontal, distribution: .equalSpacing, align: .fill, spacing: 0)
@@ -15,7 +15,7 @@ final class NoHeader: UICollectionReusableView {
     
     private lazy var titleHeader: UILabel = {
         let lbl = UILabel()
-        lbl.font = .systemFont(ofSize: 17)
+        lbl.font = .boldSystemFont(ofSize: 21)
         lbl.textColor = .black
         lbl.textAlignment = .left
         lbl.text = "Qo'shimcha ma'lumot"
@@ -33,11 +33,12 @@ final class NoHeader: UICollectionReusableView {
     }
     
     private func initUI(){
+        backgroundColor = .clear
         addSubview(mainStack)
         mainStack.translatesAutoresizingMaskIntoConstraints = false
         mainStack.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
-        mainStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6).isActive = true
-        mainStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
+        mainStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20).isActive = true
+        mainStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 17).isActive = true
         mainStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
         
         mainStack.addArrangedSubview(titleHeader)

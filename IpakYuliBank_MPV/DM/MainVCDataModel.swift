@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct DataModel {
+struct MainVCDataModel {
     let bankServices: [BankServiceDM]
     let useful: [UsefulDM]
     let transactionHistory: [TransactionHistoryDM]

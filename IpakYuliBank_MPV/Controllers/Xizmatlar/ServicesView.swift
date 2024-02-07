@@ -38,7 +38,7 @@ final class ServicesView: UIView {
         serviceCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0).isActive = true
         serviceCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
         serviceCollectionView.collectionViewLayout = createLayout()
-        serviceCollectionView.register(NoHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "NoHeader")
+        serviceCollectionView.register(InfoHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "NoHeader")
         serviceCollectionView.register(BankServiceCvCell.self, forCellWithReuseIdentifier: "BankServiceCvCell")
     }
     

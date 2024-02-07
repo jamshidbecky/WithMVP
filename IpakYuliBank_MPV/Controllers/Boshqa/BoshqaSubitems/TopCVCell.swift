@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class OthersCvCell: UICollectionViewCell {
+final class TopCVCell: UICollectionViewCell {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .horizontal, distribution: .equalSpacing, align: .center, spacing: 10)
@@ -90,10 +90,10 @@ final class OthersCvCell: UICollectionViewCell {
         leftStack.addArrangedSubview(titleLbl)
     }
     
-//    func prepare(dm: BankServiceDM){
-//        titleLbl.text = dm.title
-//        img.image = UIImage(systemName: dm.imgName)
-//    }
+    func prepare(dm: TopDM){
+        titleLbl.text = dm.title
+        img.image = UIImage(systemName: dm.imgName)
+    }
     
     override func layoutSubviews() {
         super.layoutSubviews()
