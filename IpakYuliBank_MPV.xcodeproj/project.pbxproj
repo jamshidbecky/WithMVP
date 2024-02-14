@@ -48,6 +48,8 @@
 		047271E72B613C5100BC6443 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047271E62B613C5100BC6443 /* Color.swift */; };
 		047271E92B613DB300BC6443 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047271E82B613DB300BC6443 /* PaddingTextField.swift */; };
 		047271EB2B613DC700BC6443 /* Ex+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047271EA2B613DC700BC6443 /* Ex+UIStackView.swift */; };
+		04CCF3902B752A7400CAAE85 /* TouchableCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF38F2B752A7400CAAE85 /* TouchableCVCell.swift */; };
+		04CCF39C2B7A196500CAAE85 /* CardAndWalletsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF39B2B7A196500CAAE85 /* CardAndWalletsVC.swift */; };
 		04D12C502B6B945D00700282 /* IdentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C4F2B6B945D00700282 /* IdentificationView.swift */; };
 		04D12C532B6B9F4D00700282 /* SameCellButView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C522B6B9F4D00700282 /* SameCellButView.swift */; };
 		04D12C562B6C055400700282 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C552B6C055400700282 /* NotificationVC.swift */; };
@@ -64,6 +66,8 @@
 		04D12CB72B7377A900700282 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CB62B7377A900700282 /* PaymentVC.swift */; };
 		04D12CB92B7377B400700282 /* PaymentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CB82B7377B400700282 /* PaymentsPresenter.swift */; };
 		04D12CBB2B7377C000700282 /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CBA2B7377C000700282 /* PaymentsView.swift */; };
+		04D12CBE2B73829300700282 /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CBD2B73829300700282 /* CardsVC.swift */; };
+		678CA21202509BFE898FE820 /* Pods_IpakYuliBank_MPV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA5FDEAEBB0DAC27013810F /* Pods_IpakYuliBank_MPV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +114,8 @@
 		047271E62B613C5100BC6443 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		047271E82B613DB300BC6443 /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		047271EA2B613DC700BC6443 /* Ex+UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+UIStackView.swift"; sourceTree = "<group>"; };
+		04CCF38F2B752A7400CAAE85 /* TouchableCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableCVCell.swift; sourceTree = "<group>"; };
+		04CCF39B2B7A196500CAAE85 /* CardAndWalletsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAndWalletsVC.swift; sourceTree = "<group>"; };
 		04D12C4F2B6B945D00700282 /* IdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificationView.swift; sourceTree = "<group>"; };
 		04D12C522B6B9F4D00700282 /* SameCellButView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SameCellButView.swift; sourceTree = "<group>"; };
 		04D12C552B6C055400700282 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
@@ -126,6 +132,10 @@
 		04D12CB62B7377A900700282 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		04D12CB82B7377B400700282 /* PaymentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsPresenter.swift; sourceTree = "<group>"; };
 		04D12CBA2B7377C000700282 /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
+		04D12CBD2B73829300700282 /* CardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
+		1EA5FDEAEBB0DAC27013810F /* Pods_IpakYuliBank_MPV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IpakYuliBank_MPV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B26C4D591C5559D39FA7CF4 /* Pods-IpakYuliBank_MPV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpakYuliBank_MPV.release.xcconfig"; path = "Target Support Files/Pods-IpakYuliBank_MPV/Pods-IpakYuliBank_MPV.release.xcconfig"; sourceTree = "<group>"; };
+		F243ED9FD09CB2CBBB8364A2 /* Pods-IpakYuliBank_MPV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpakYuliBank_MPV.debug.xcconfig"; path = "Target Support Files/Pods-IpakYuliBank_MPV/Pods-IpakYuliBank_MPV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678CA21202509BFE898FE820 /* Pods_IpakYuliBank_MPV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +173,6 @@
 		0445305D2B685AD2000E830B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				04D12C542B6C053F00700282 /* Notification */,
-				045FD9442B6ADEAB007E8FED /* profile */,
 				046D9CED2B6128C900370BA3 /* Asosiy */,
 				046D9CEE2B6128D100370BA3 /* Xizmatlar */,
 				046D9CEF2B6128D800370BA3 /* Tulovlar */,
@@ -255,6 +264,8 @@
 			children = (
 				046D9CD82B61283400370BA3 /* IpakYuliBank_MPV */,
 				046D9CD72B61283400370BA3 /* Products */,
+				F7AA3B020DBDB1538838837C /* Pods */,
+				5C1F95C807BA58577B9EBC3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,16 +295,20 @@
 		046D9CED2B6128C900370BA3 /* Asosiy */ = {
 			isa = PBXGroup;
 			children = (
+				046D9CF32B61292200370BA3 /* AsosiyVC.swift */,
+				046D9D022B6138B900370BA3 /* AsosiyView.swift */,
+				044530562B685337000E830B /* AsosiyPresenter.swift */,
+				045FD9442B6ADEAB007E8FED /* profile */,
+				04CCF39A2B7A168800CAAE85 /* cardsAndWallets */,
+				04D12C542B6C053F00700282 /* Notification */,
+				0445304F2B683A0A000E830B /* myHome */,
+				0445306A2B6943F9000E830B /* favorites */,
+				04D12CBC2B73828500700282 /* AsosiySubItems */,
 				044530772B6997BA000E830B /* myCards */,
 				044530722B69936F000E830B /* transactionHistory */,
-				0445306A2B6943F9000E830B /* favorites */,
 				044530652B693E27000E830B /* useful */,
 				0445305E2B690DD1000E830B /* phoneNumber */,
 				044530582B685346000E830B /* bankServices */,
-				0445304F2B683A0A000E830B /* myHome */,
-				046D9CF32B61292200370BA3 /* AsosiyVC.swift */,
-				044530562B685337000E830B /* AsosiyPresenter.swift */,
-				046D9D022B6138B900370BA3 /* AsosiyView.swift */,
 			);
 			path = Asosiy;
 			sourceTree = "<group>";
@@ -344,8 +359,17 @@
 				047271EA2B613DC700BC6443 /* Ex+UIStackView.swift */,
 				046D9D002B61364F00370BA3 /* Ex+Constraints.swift */,
 				047271E62B613C5100BC6443 /* Color.swift */,
+				04CCF38F2B752A7400CAAE85 /* TouchableCVCell.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		04CCF39A2B7A168800CAAE85 /* cardsAndWallets */ = {
+			isa = PBXGroup;
+			children = (
+				04CCF39B2B7A196500CAAE85 /* CardAndWalletsVC.swift */,
+			);
+			path = cardsAndWallets;
 			sourceTree = "<group>";
 		};
 		04D12C512B6B9F1800700282 /* subitems */ = {
@@ -380,6 +404,31 @@
 			path = subitem;
 			sourceTree = "<group>";
 		};
+		04D12CBC2B73828500700282 /* AsosiySubItems */ = {
+			isa = PBXGroup;
+			children = (
+				04D12CBD2B73829300700282 /* CardsVC.swift */,
+			);
+			path = AsosiySubItems;
+			sourceTree = "<group>";
+		};
+		5C1F95C807BA58577B9EBC3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EA5FDEAEBB0DAC27013810F /* Pods_IpakYuliBank_MPV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7AA3B020DBDB1538838837C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F243ED9FD09CB2CBBB8364A2 /* Pods-IpakYuliBank_MPV.debug.xcconfig */,
+				3B26C4D591C5559D39FA7CF4 /* Pods-IpakYuliBank_MPV.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,9 +436,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046D9CEA2B61283600370BA3 /* Build configuration list for PBXNativeTarget "IpakYuliBank_MPV" */;
 			buildPhases = (
+				8F2471D506A14DD7C8C93DEF /* [CP] Check Pods Manifest.lock */,
 				046D9CD22B61283400370BA3 /* Sources */,
 				046D9CD32B61283400370BA3 /* Frameworks */,
 				046D9CD42B61283400370BA3 /* Resources */,
+				22B6DB4C9CB26DF3C48E0245 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -445,6 +496,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22B6DB4C9CB26DF3C48E0245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IpakYuliBank_MPV/Pods-IpakYuliBank_MPV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IpakYuliBank_MPV/Pods-IpakYuliBank_MPV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IpakYuliBank_MPV/Pods-IpakYuliBank_MPV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F2471D506A14DD7C8C93DEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IpakYuliBank_MPV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		046D9CD22B61283400370BA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -477,9 +570,11 @@
 				044530602B690DE5000E830B /* PhoneNumberCvCell.swift in Sources */,
 				0445306C2B69441B000E830B /* FavoritesHeader.swift in Sources */,
 				04D12CAF2B73696700700282 /* SettingHeader.swift in Sources */,
+				04CCF3902B752A7400CAAE85 /* TouchableCVCell.swift in Sources */,
 				044530512B683A29000E830B /* MyHomeCvCell.swift in Sources */,
 				04D12C502B6B945D00700282 /* IdentificationView.swift in Sources */,
 				046D9CFC2B61294D00370BA3 /* OtherVC.swift in Sources */,
+				04D12CBE2B73829300700282 /* CardsVC.swift in Sources */,
 				044530862B6A65B8000E830B /* ServicesView.swift in Sources */,
 				044530642B693C6B000E830B /* BackgroundColor.swift in Sources */,
 				0445305A2B68536A000E830B /* BankServiceCvCell.swift in Sources */,
@@ -487,6 +582,7 @@
 				045FD94C2B6AE8C8007E8FED /* UserView.swift in Sources */,
 				0445307D2B69A4BB000E830B /* OtherView.swift in Sources */,
 				04D12C812B7125D300700282 /* NewsView.swift in Sources */,
+				04CCF39C2B7A196500CAAE85 /* CardAndWalletsVC.swift in Sources */,
 				04D12CB52B736F4400700282 /* SettingCVCell.swift in Sources */,
 				04D12C5A2B6C056C00700282 /* NotificationPresenter.swift in Sources */,
 				044530712B698AE7000E830B /* MainVCDataModel.swift in Sources */,
@@ -643,11 +739,13 @@
 		};
 		046D9CEB2B61283600370BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F243ED9FD09CB2CBBB8364A2 /* Pods-IpakYuliBank_MPV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IpakYuliBank_MPV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -669,11 +767,13 @@
 		};
 		046D9CEC2B61283600370BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B26C4D591C5559D39FA7CF4 /* Pods-IpakYuliBank_MPV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IpakYuliBank_MPV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

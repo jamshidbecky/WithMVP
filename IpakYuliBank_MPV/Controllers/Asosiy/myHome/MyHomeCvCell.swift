@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MyHomeCvCell: UICollectionViewCell {
+final class MyHomeCvCell: TouchableCVCell {
     
     private lazy var mainView: UIView = {
         let v = UIView()

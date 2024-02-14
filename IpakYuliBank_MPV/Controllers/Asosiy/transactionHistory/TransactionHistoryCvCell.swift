@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TransactionHistoryCvCell: UICollectionViewCell {
+final class TransactionHistoryCvCell: TouchableCVCell {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .vertical, distribution: .fillEqually, align: .fill, spacing: 8)

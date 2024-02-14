@@ -41,6 +41,7 @@ final class PhoneNumberCvCell: UICollectionViewCell {
         tf.font = .systemFont(ofSize: 13)
         tf.textColor = .black
         tf.keyboardType = .numberPad
+        tf.addTarget(self, action: #selector(didChangeNumberTF), for: .editingChanged)
         return tf
     }()
     
@@ -68,10 +69,36 @@ final class PhoneNumberCvCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         initCell()
+        numberTF.delegate = self
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func didChangeNumberTF(){
+//        format(with: numberTF.text ?? "", phone: "+998 94 644 99 29")
+    }
+    
+    func format(with mask: String, phone: String) -> String {
+        let numbers = phone.replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression)
+        var result = ""
+        var index = numbers.startIndex // numbers iterator
+
+        // iterate over the mask characters until the iterator of numbers ends
+        for ch in mask where index < numbers.endIndex {
+            if ch == "X" {
+                // mask requires a number in this place, so take the next one
+                result.append(numbers[index])
+
+                // move numbers iterator to the next index
+                index = numbers.index(after: index)
+
+            } else {
+                result.append(ch) // just append a mask character
+            }
+        }
+        return result
     }
     
     private func initCell(){
@@ -102,7 +129,8 @@ final class PhoneNumberCvCell: UICollectionViewCell {
         startNumberLbl.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         mainStack.addArrangedSubview(numberTF)
         numberTF.setContentHuggingPriority(.defaultLow, for: .horizontal)
-//        numberTF.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+//        numberTF.translatesAutoresizingMaskIntoConstraints = false
+        
         mainStack.addArrangedSubview(btnsStack)
         
         btnsStack.addArrangedSubview(myNumberBtn)
@@ -115,4 +143,16 @@ final class PhoneNumberCvCell: UICollectionViewCell {
         
     }
     
+}
+
+
+extension PhoneNumberCvCell: UITextFieldDelegate {
+    func textField(_ textField: UITextField, 
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        guard let text = textField.text else { return false }
+        let newString = (text as NSString).replacingCharacters(in: range, with: string)
+        textField.text = format(with: "(XX) XXX-XX-XX", phone: newString)
+        return false
+    }
 }

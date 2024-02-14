@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol MyHomeHeaderDelegate: AnyObject {
+    func didTouchFalonButton()
+}
+
 final class MyHomeHeader: UICollectionReusableView {
     
     private lazy var mainStack: UIStackView = {
@@ -69,7 +73,7 @@ final class MyHomeHeader: UICollectionReusableView {
 
     let deposits = LabelPlusButton(title: "Omonatlar", imgName: "aspectratio")
 
-        
+    weak var delegate: MyHomeHeaderDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -78,6 +82,10 @@ final class MyHomeHeader: UICollectionReusableView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func walletPressed() {
+        delegate?.didTouchFalonButton()
     }
     
     private func setupUI() {
@@ -102,6 +110,8 @@ final class MyHomeHeader: UICollectionReusableView {
         thridStack.addArrangedSubview(credits)
         thridStack.addArrangedSubview(deposits)
         
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(walletPressed))
+        walletAndCards.addGestureRecognizer(gesture)
         
         commonBalanceLbl.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
         commonBalanceLbl.setContentHuggingPriority(.defaultHigh, for: .vertical)

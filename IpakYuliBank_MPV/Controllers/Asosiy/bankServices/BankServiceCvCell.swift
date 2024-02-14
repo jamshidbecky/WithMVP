@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BankServiceCvCell: UICollectionViewCell {
+final class BankServiceCvCell: TouchableCVCell {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .vertical, distribution: .fillEqually, align: .center, spacing: 2)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TopCVCell: UICollectionViewCell {
+final class TopCVCell: TouchableCVCell {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .horizontal, distribution: .equalSpacing, align: .center, spacing: 10)

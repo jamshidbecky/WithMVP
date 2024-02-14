@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FavoritesCvCell: UICollectionViewCell {
+final class FavoritesCvCell: TouchableCVCell {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .vertical, distribution: .fillEqually, align: .center, spacing: 2)

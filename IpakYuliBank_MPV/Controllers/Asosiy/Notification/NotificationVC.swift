@@ -7,11 +7,6 @@
 
 import UIKit
 
-enum ElementsType: Int, CaseIterable {
-    case news
-    case notifications
-}
-
 final class NotificationVC: UIViewController {
     
     private var isNews = true
@@ -80,7 +75,6 @@ final class NotificationVC: UIViewController {
         v.translatesAutoresizingMaskIntoConstraints = false
         v.heightAnchor.constraint(equalToConstant: 4).isActive = true
         v.backgroundColor = .clear
-//        v.backgroundColor = UIColor(named: "mainColor")
         return v
     }()
     
@@ -94,8 +88,6 @@ final class NotificationVC: UIViewController {
         notificationsTableView.dataSource = self
         notificationsTableView.delegate = self
         
-        
-        
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(newsPressed))
         swipeLeft.direction = .right
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(notificationPressed))
@@ -103,19 +95,18 @@ final class NotificationVC: UIViewController {
         
         view.addGestureRecognizer(swipeLeft)
         view.addGestureRecognizer(swipeRight)
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            tabBarController?.tabBar.isHidden = true
-        }
-
-        override func viewWillDisappear(_ animated: Bool) {
-            super.viewWillDisappear(animated)
-            tabBarController?.tabBar.isHidden = false
-        }
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
+    
     private func setupUI() {
         view.backgroundColor = UIColor(red: 243/255, green: 246/255, blue: 248/255, alpha: 1)
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .done, target: self, action: #selector(leftBtnTapped))
@@ -160,17 +151,6 @@ final class NotificationVC: UIViewController {
         newsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
     }
     
-//    @objc private func respondToGesture(gesture: UISwipeGestureRecognizer) {
-//        switch gesture.direction {
-//        case UISwipeGestureRecognizer.Direction.left:
-//            print("left swipe")
-//        case UISwipeGestureRecognizer.Direction.right:
-//            print("right swipe")
-//        default:
-//            break
-//        }
-//    }
-    
     @objc private func leftBtnTapped() {
         navigationController?.popViewController(animated: true)
         tabBarController?.tabBar.isHidden = true
@@ -210,7 +190,7 @@ final class NotificationVC: UIViewController {
 extension NotificationVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        newsTableView.isHidden && notificationsTableView.isHidden == false ? 1 : 3
+        newsTableView.isHidden && notificationsTableView.isHidden == false ? 0 : 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

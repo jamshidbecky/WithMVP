@@ -11,6 +11,7 @@ protocol AsosiyPresenterable: AnyObject {
     func numberOfItemsInSection(for section: Int) -> Int
     func cellForItemAt(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell
     func viewForSupplementaryElementOfKind(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionReusableView
+    func getViewControllerInstance(_ vc: AsosiyVC)
 }
 
 final class AsosiyPresenter: AsosiyPresenterable {
@@ -54,6 +55,12 @@ final class AsosiyPresenter: AsosiyPresenterable {
         MyCardsDM(name: "KHAYDAROV JAMSHIDBEK", type: "UZCARD", value: "0.17 UZS", isFavorites: true),
         MyCardsDM(name: "KHAYDAROV KHONDAMIR", type: "HUMO", value: "0.17 UZS", isFavorites: true)
     ])
+    
+    var viewController: AsosiyVC?
+    
+    func getViewControllerInstance(_ vc: AsosiyVC) {
+        viewController = vc
+    }
     
     func numberOfItemsInSection(for section: Int) -> Int {
         guard let sectionType = SectionType(rawValue: section) else { return 0 }
@@ -105,7 +112,17 @@ final class AsosiyPresenter: AsosiyPresenterable {
 
         switch sectionType {
         case .myHome:
-            return collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "MyHomeHeader", for: indexPath)
+            guard let headerView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: UICollectionView.elementKindSectionHeader,
+                withReuseIdentifier: "MyHomeHeader",
+                for: indexPath
+            ) as? MyHomeHeader else { return UICollectionReusableView() }
+            
+            headerView.delegate = self
+            
+            
+            
+            return headerView
         case .bankServices:
             return collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "BankServiceHeader", for: indexPath)
         case .phoneNumber:
@@ -124,3 +141,8 @@ final class AsosiyPresenter: AsosiyPresenterable {
     
 }
 
+extension AsosiyPresenter: MyHomeHeaderDelegate {
+    func didTouchFalonButton() {
+        viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
+    }
+}

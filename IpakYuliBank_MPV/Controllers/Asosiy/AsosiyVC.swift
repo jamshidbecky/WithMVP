@@ -54,19 +54,24 @@ final class AsosiyVC: UIViewController {
     override func loadView() {
         super.loadView()
         view = mainView
+        
+        presenter.getViewControllerInstance(self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initNavigation()
+        
         mainView.asosiyCollectionView.delegate = self
         mainView.asosiyCollectionView.dataSource = self
         
         refreshControl.tintColor = .white
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         mainView.asosiyCollectionView.refreshControl = refreshControl
-        
-        
+
+        view.isUserInteractionEnabled = true
+        let endEditingGesture = UITapGestureRecognizer(target: self, action: #selector(tappedToView))
+        view.addGestureRecognizer(endEditingGesture)
     }
     
     private func initNavigation() {
@@ -86,7 +91,6 @@ final class AsosiyVC: UIViewController {
         navigationItem.leftBarButtonItem?.tintColor = .white
         navigationItem.rightBarButtonItem?.tintColor = .white
         customNavigationBar.addSubview(searchTF)
-        
         searchTF.frame = .init(
             x: 2, y: 2,
             width: customNavigationBar.frame.width - 4,
@@ -94,8 +98,6 @@ final class AsosiyVC: UIViewController {
         )
         searchTF.layer.cornerRadius = searchTF.frame.height / 2
         searchTF.backgroundColor = .systemGray.withAlphaComponent(0.6)
-        searchTF.placeholder = "Izlash"
-        searchTF.textColor = .white
         searchTF.attributedPlaceholder = NSAttributedString(
             string: "Izlash",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -126,6 +128,10 @@ final class AsosiyVC: UIViewController {
             self.mainView.asosiyCollectionView.reloadData()
             self.refreshControl.endRefreshing()
         }
+    }
+    
+    @objc private func tappedToView() {
+        searchTF.endEditing(true)
     }
     
 }
