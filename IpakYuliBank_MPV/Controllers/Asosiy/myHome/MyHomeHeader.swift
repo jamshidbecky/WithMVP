@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum typeButton {
+    case walletAndCards
+    case credits
+    case deposits
+}
+
 protocol MyHomeHeaderDelegate: AnyObject {
     func didTouchFalonButton()
 }
@@ -68,7 +74,7 @@ final class MyHomeHeader: UICollectionReusableView {
     }()
     
     let walletAndCards = LabelPlusButton(title: "Kartalar va hamyon", imgName: "banknote")
-
+    
     let credits = LabelPlusButton(title: "Kreditlar", imgName: "door.french.open")
 
     let deposits = LabelPlusButton(title: "Omonatlar", imgName: "aspectratio")
@@ -78,6 +84,8 @@ final class MyHomeHeader: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        
+        walletAndCards.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -117,4 +125,13 @@ final class MyHomeHeader: UICollectionReusableView {
         commonBalanceLbl.setContentHuggingPriority(.defaultHigh, for: .vertical)
         
     }
+}
+
+
+extension MyHomeHeader: LabelPlusButtonProtocol {
+    func didButtonTapped(type: typeButton) {
+        <#code#>
+    }
+    
+    
 }
