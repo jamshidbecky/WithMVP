@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MyHomeCvCell: TouchableCVCell {
+final class MyHomeCvCell: UICollectionViewCell {
     
     private lazy var mainView: UIView = {
         let v = UIView()
@@ -77,6 +77,16 @@ final class MyHomeCvCell: TouchableCVCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            if isHighlighted {
+                mainView.backgroundColor = .lightGray
+            } else {
+                mainView.backgroundColor = .white
+            }
+        }
     }
     
     private func initUI() {

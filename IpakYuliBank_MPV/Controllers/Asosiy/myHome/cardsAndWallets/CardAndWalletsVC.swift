@@ -12,6 +12,7 @@ final class CardAndWalletsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
     }
     
 }

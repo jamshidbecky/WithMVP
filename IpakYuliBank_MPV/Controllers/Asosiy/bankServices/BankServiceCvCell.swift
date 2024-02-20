@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BankServiceCvCell: TouchableCVCell {
+final class BankServiceCvCell: UICollectionViewCell {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .vertical, distribution: .fillEqually, align: .center, spacing: 2)
@@ -54,6 +54,16 @@ final class BankServiceCvCell: TouchableCVCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            if isHighlighted {
+                shadowView.backgroundColor = .lightGray
+            } else {
+                shadowView.backgroundColor = .white
+            }
+        }
     }
     
     private func initCell(){

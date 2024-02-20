@@ -7,21 +7,18 @@
 
 import UIKit
 
-protocol LabelPlusButtonProtocol {
-    func didButtonTapped(type: typeButton)
-}
 
 final class LabelPlusButton: UIView {
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .vertical, distribution: .fill, align: .fill, spacing: 10)
     }()
     
-    private lazy var btn: UIButton = {
-        let btn = UIButton(type: .system)
-        btn.tintColor = UIColor(named: "mainColor")
-        btn.backgroundColor = .white
-        btn.clipsToBounds = true
-        return btn
+    private lazy var image: UIImageView = {
+        let img = UIImageView()
+        img.backgroundColor = .white
+        img.contentMode = .center
+        img.tintColor = UIColor(named: "mainColor")
+        return img
     }()
 
     private lazy var lbl: UILabel = {
@@ -32,14 +29,11 @@ final class LabelPlusButton: UIView {
         lbl.numberOfLines = 2
         return lbl
     }()
-    
-    var delegate: LabelPlusButtonProtocol?
-    var type: typeButton?
-    
+        
     init(title: String, imgName: String) {
         super.init(frame: .zero)
         lbl.text = title
-        btn.setImage(UIImage(systemName: imgName), for: .normal)
+        image.image = UIImage(systemName: imgName)
         
         
         
@@ -58,19 +52,14 @@ final class LabelPlusButton: UIView {
         mainStack.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         mainStack.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
-        mainStack.addArrangedSubview(btn)
-        btn.addTarget(self, action: #selector(btnTapped), for: .touchUpInside)
+        mainStack.addArrangedSubview(image)
         mainStack.addArrangedSubview(lbl)
     }
     
-    @objc private func btnTapped() {
-        delegate?.didButtonTapped(type: .credits)
-    }
-    
-    
     override func layoutSubviews() {
         super.layoutSubviews()
-        btn.heightAnchor.constraint(equalTo: btn.widthAnchor, multiplier: 1).isActive = true
-        btn.layer.cornerRadius = btn.frame.height / 2
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.heightAnchor.constraint(equalTo: image.widthAnchor, multiplier: 1).isActive = true
+        image.layer.cornerRadius = image.frame.height / 2
     }
 }

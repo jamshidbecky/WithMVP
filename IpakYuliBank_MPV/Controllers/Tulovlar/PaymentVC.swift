@@ -30,9 +30,24 @@ final class PaymentVC: UIViewController {
         view = paymentsView
     }
     
+    private let customNavigationBar: UIView = .init(
+        frame: CGRect(x: 330, y: 0, width: 0, height: 44)
+    )
+    
+    private let searchTF: UITextField = PaddingTextField()
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "To'lovlar"
+//        title = "To'lovlar"
+        navigationItem.titleView = customNavigationBar
+        customNavigationBar.addSubview(searchTF)
+        searchTF.translatesAutoresizingMaskIntoConstraints = false
+        searchTF.topAnchor.constraint(equalTo: customNavigationBar.topAnchor).isActive = true
+        searchTF.leadingAnchor.constraint(equalTo: customNavigationBar.leadingAnchor).isActive = true
+        searchTF.trailingAnchor.constraint(equalTo: customNavigationBar.trailingAnchor).isActive = true
+        searchTF.bottomAnchor.constraint(equalTo: customNavigationBar.bottomAnchor).isActive = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonTapped))
         navigationItem.rightBarButtonItem?.tintColor = .black
         
@@ -40,8 +55,16 @@ final class PaymentVC: UIViewController {
         paymentsView.paymentsCollectionView.dataSource = self
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        customNavigationBar.frame = .init(x: 0, y: 330, width: 0, height: 44)
+        customNavigationBar.backgroundColor = .clear
+    }
+    
     @objc private func searchButtonTapped(){
-        
+        UIView.animate(withDuration: 0.7, animations: { [self] in
+            customNavigationBar.frame = .init(x: 0, y: 0, width: 330, height: 44)
+            customNavigationBar.backgroundColor = .gray.withAlphaComponent(0.5)
+        })
     }
 }
 

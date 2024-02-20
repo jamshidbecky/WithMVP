@@ -48,6 +48,8 @@
 		047271E72B613C5100BC6443 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047271E62B613C5100BC6443 /* Color.swift */; };
 		047271E92B613DB300BC6443 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047271E82B613DB300BC6443 /* PaddingTextField.swift */; };
 		047271EB2B613DC700BC6443 /* Ex+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047271EA2B613DC700BC6443 /* Ex+UIStackView.swift */; };
+		04B4580F2B84A70200153969 /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4580E2B84A70200153969 /* CreditsVC.swift */; };
+		04B458112B84A70B00153969 /* DepositsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B458102B84A70B00153969 /* DepositsVC.swift */; };
 		04CCF3902B752A7400CAAE85 /* TouchableCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF38F2B752A7400CAAE85 /* TouchableCVCell.swift */; };
 		04CCF39C2B7A196500CAAE85 /* CardAndWalletsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF39B2B7A196500CAAE85 /* CardAndWalletsVC.swift */; };
 		04D12C502B6B945D00700282 /* IdentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C4F2B6B945D00700282 /* IdentificationView.swift */; };
@@ -66,7 +68,6 @@
 		04D12CB72B7377A900700282 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CB62B7377A900700282 /* PaymentVC.swift */; };
 		04D12CB92B7377B400700282 /* PaymentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CB82B7377B400700282 /* PaymentsPresenter.swift */; };
 		04D12CBB2B7377C000700282 /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CBA2B7377C000700282 /* PaymentsView.swift */; };
-		04D12CBE2B73829300700282 /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12CBD2B73829300700282 /* CardsVC.swift */; };
 		678CA21202509BFE898FE820 /* Pods_IpakYuliBank_MPV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA5FDEAEBB0DAC27013810F /* Pods_IpakYuliBank_MPV.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,8 @@
 		047271E62B613C5100BC6443 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		047271E82B613DB300BC6443 /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		047271EA2B613DC700BC6443 /* Ex+UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+UIStackView.swift"; sourceTree = "<group>"; };
+		04B4580E2B84A70200153969 /* CreditsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
+		04B458102B84A70B00153969 /* DepositsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsVC.swift; sourceTree = "<group>"; };
 		04CCF38F2B752A7400CAAE85 /* TouchableCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableCVCell.swift; sourceTree = "<group>"; };
 		04CCF39B2B7A196500CAAE85 /* CardAndWalletsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAndWalletsVC.swift; sourceTree = "<group>"; };
 		04D12C4F2B6B945D00700282 /* IdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificationView.swift; sourceTree = "<group>"; };
@@ -132,7 +135,6 @@
 		04D12CB62B7377A900700282 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		04D12CB82B7377B400700282 /* PaymentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsPresenter.swift; sourceTree = "<group>"; };
 		04D12CBA2B7377C000700282 /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
-		04D12CBD2B73829300700282 /* CardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
 		1EA5FDEAEBB0DAC27013810F /* Pods_IpakYuliBank_MPV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IpakYuliBank_MPV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B26C4D591C5559D39FA7CF4 /* Pods-IpakYuliBank_MPV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpakYuliBank_MPV.release.xcconfig"; path = "Target Support Files/Pods-IpakYuliBank_MPV/Pods-IpakYuliBank_MPV.release.xcconfig"; sourceTree = "<group>"; };
 		F243ED9FD09CB2CBBB8364A2 /* Pods-IpakYuliBank_MPV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpakYuliBank_MPV.debug.xcconfig"; path = "Target Support Files/Pods-IpakYuliBank_MPV/Pods-IpakYuliBank_MPV.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,9 @@
 		0445304F2B683A0A000E830B /* myHome */ = {
 			isa = PBXGroup;
 			children = (
+				04B4580D2B84A57900153969 /* deposits */,
+				04B4580C2B84A56F00153969 /* credits */,
+				04CCF39A2B7A168800CAAE85 /* cardsAndWallets */,
 				044530502B683A29000E830B /* MyHomeCvCell.swift */,
 				044530522B6841CA000E830B /* MyHomeHeader.swift */,
 				044530542B684493000E830B /* LabelPlusButton.swift */,
@@ -298,17 +303,15 @@
 				046D9CF32B61292200370BA3 /* AsosiyVC.swift */,
 				046D9D022B6138B900370BA3 /* AsosiyView.swift */,
 				044530562B685337000E830B /* AsosiyPresenter.swift */,
-				045FD9442B6ADEAB007E8FED /* profile */,
-				04CCF39A2B7A168800CAAE85 /* cardsAndWallets */,
-				04D12C542B6C053F00700282 /* Notification */,
 				0445304F2B683A0A000E830B /* myHome */,
+				044530582B685346000E830B /* bankServices */,
+				045FD9442B6ADEAB007E8FED /* profile */,
+				04D12C542B6C053F00700282 /* Notification */,
 				0445306A2B6943F9000E830B /* favorites */,
-				04D12CBC2B73828500700282 /* AsosiySubItems */,
 				044530772B6997BA000E830B /* myCards */,
 				044530722B69936F000E830B /* transactionHistory */,
 				044530652B693E27000E830B /* useful */,
 				0445305E2B690DD1000E830B /* phoneNumber */,
-				044530582B685346000E830B /* bankServices */,
 			);
 			path = Asosiy;
 			sourceTree = "<group>";
@@ -364,6 +367,22 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		04B4580C2B84A56F00153969 /* credits */ = {
+			isa = PBXGroup;
+			children = (
+				04B4580E2B84A70200153969 /* CreditsVC.swift */,
+			);
+			path = credits;
+			sourceTree = "<group>";
+		};
+		04B4580D2B84A57900153969 /* deposits */ = {
+			isa = PBXGroup;
+			children = (
+				04B458102B84A70B00153969 /* DepositsVC.swift */,
+			);
+			path = deposits;
+			sourceTree = "<group>";
+		};
 		04CCF39A2B7A168800CAAE85 /* cardsAndWallets */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,14 +421,6 @@
 				04D12C822B7125DF00700282 /* NotificationsView.swift */,
 			);
 			path = subitem;
-			sourceTree = "<group>";
-		};
-		04D12CBC2B73828500700282 /* AsosiySubItems */ = {
-			isa = PBXGroup;
-			children = (
-				04D12CBD2B73829300700282 /* CardsVC.swift */,
-			);
-			path = AsosiySubItems;
 			sourceTree = "<group>";
 		};
 		5C1F95C807BA58577B9EBC3A /* Frameworks */ = {
@@ -552,6 +563,7 @@
 				044530792B69980A000E830B /* MyCardsCvCell.swift in Sources */,
 				046D9CF62B61292D00370BA3 /* ServicesVC.swift in Sources */,
 				0445306E2B694427000E830B /* FavoritesCvCell.swift in Sources */,
+				04B4580F2B84A70200153969 /* CreditsVC.swift in Sources */,
 				04D12CB32B736F2300700282 /* InfoCVCell.swift in Sources */,
 				0445305C2B685375000E830B /* BankServiceHeader.swift in Sources */,
 				046D9CFA2B61294400370BA3 /* AyirboshlashVC.swift in Sources */,
@@ -574,11 +586,11 @@
 				044530512B683A29000E830B /* MyHomeCvCell.swift in Sources */,
 				04D12C502B6B945D00700282 /* IdentificationView.swift in Sources */,
 				046D9CFC2B61294D00370BA3 /* OtherVC.swift in Sources */,
-				04D12CBE2B73829300700282 /* CardsVC.swift in Sources */,
 				044530862B6A65B8000E830B /* ServicesView.swift in Sources */,
 				044530642B693C6B000E830B /* BackgroundColor.swift in Sources */,
 				0445305A2B68536A000E830B /* BankServiceCvCell.swift in Sources */,
 				046D9CDA2B61283400370BA3 /* AppDelegate.swift in Sources */,
+				04B458112B84A70B00153969 /* DepositsVC.swift in Sources */,
 				045FD94C2B6AE8C8007E8FED /* UserView.swift in Sources */,
 				0445307D2B69A4BB000E830B /* OtherView.swift in Sources */,
 				04D12C812B7125D300700282 /* NewsView.swift in Sources */,

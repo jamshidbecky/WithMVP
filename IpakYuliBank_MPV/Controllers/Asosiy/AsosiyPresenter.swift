@@ -120,8 +120,6 @@ final class AsosiyPresenter: AsosiyPresenterable {
             
             headerView.delegate = self
             
-            
-            
             return headerView
         case .bankServices:
             return collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "BankServiceHeader", for: indexPath)
@@ -142,7 +140,14 @@ final class AsosiyPresenter: AsosiyPresenterable {
 }
 
 extension AsosiyPresenter: MyHomeHeaderDelegate {
-    func didTouchFalonButton() {
-        viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
+    func didSelectButton(mode: MyHomeHeaderMode) {
+        switch mode {
+        case .cardsAndWallet:
+            viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
+        case .credits:
+            viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
+        case .deposits:
+            viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
+        }
     }
 }

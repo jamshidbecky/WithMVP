@@ -61,6 +61,16 @@ final class SettingCVCell: TouchableCVCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override var isHighlighted: Bool {
+        didSet {
+            if isHighlighted {
+                shadowView.backgroundColor = .lightGray
+            } else {
+                shadowView.backgroundColor = .white
+            }
+        }
+    }
+    
     private func initCell(){
         shadowView.layer.shadowColor = UIColor.gray.cgColor
         shadowView.layer.shadowOpacity = 0.4

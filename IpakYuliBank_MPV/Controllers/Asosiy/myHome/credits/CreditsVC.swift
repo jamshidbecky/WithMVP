@@ -1,17 +1,18 @@
 //
-//  CardsVC.swift
+//  CreditsVC.swift
 //  IpakYuliBank_MPV
 //
-//  Created by locky on 07/02/24.
+//  Created by locky on 20/02/24.
 //
 
 import UIKit
 
-final class CardsVC: UIViewController {
+final class CreditsVC: UIViewController {
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
     }
+    
 }

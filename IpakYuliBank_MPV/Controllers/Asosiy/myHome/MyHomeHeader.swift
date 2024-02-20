@@ -7,14 +7,14 @@
 
 import UIKit
 
-enum typeButton {
-    case walletAndCards
+enum MyHomeHeaderMode {
+    case cardsAndWallet
     case credits
     case deposits
 }
-
+ 
 protocol MyHomeHeaderDelegate: AnyObject {
-    func didTouchFalonButton()
+    func didSelectButton(mode: MyHomeHeaderMode)
 }
 
 final class MyHomeHeader: UICollectionReusableView {
@@ -78,22 +78,29 @@ final class MyHomeHeader: UICollectionReusableView {
     let credits = LabelPlusButton(title: "Kreditlar", imgName: "door.french.open")
 
     let deposits = LabelPlusButton(title: "Omonatlar", imgName: "aspectratio")
-
-    weak var delegate: MyHomeHeaderDelegate?
+    
+    // MARK: Delegate
+    var delegate: MyHomeHeaderDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
-        
-        walletAndCards.delegate = self
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc private func walletPressed() {
-        delegate?.didTouchFalonButton()
+    @objc private func cardsAndWalletViewPressed() {
+        delegate?.didSelectButton(mode: .cardsAndWallet)
+    }
+    
+    @objc private func creditsViewPressed() {
+        delegate?.didSelectButton(mode: .credits)
+    }
+    
+    @objc private func depositsViewPressed() {
+        delegate?.didSelectButton(mode: .deposits)
     }
     
     private func setupUI() {
@@ -118,20 +125,19 @@ final class MyHomeHeader: UICollectionReusableView {
         thridStack.addArrangedSubview(credits)
         thridStack.addArrangedSubview(deposits)
         
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(walletPressed))
-        walletAndCards.addGestureRecognizer(gesture)
+        walletAndCards.isUserInteractionEnabled = true
+        
+        let gestureWalletAndCards = UITapGestureRecognizer(target: self, action: #selector(cardsAndWalletViewPressed))
+        walletAndCards.addGestureRecognizer(gestureWalletAndCards)
+        
+        let gestureCredits = UITapGestureRecognizer(target: self, action: #selector(creditsViewPressed))
+        credits.addGestureRecognizer(gestureCredits)
+        
+        let gestureDeposits = UITapGestureRecognizer(target: self, action: #selector(depositsViewPressed))
+        deposits.addGestureRecognizer(gestureDeposits)
         
         commonBalanceLbl.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
         commonBalanceLbl.setContentHuggingPriority(.defaultHigh, for: .vertical)
         
     }
-}
-
-
-extension MyHomeHeader: LabelPlusButtonProtocol {
-    func didButtonTapped(type: typeButton) {
-        <#code#>
-    }
-    
-    
 }

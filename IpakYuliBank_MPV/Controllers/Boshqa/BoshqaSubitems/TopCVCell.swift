@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TopCVCell: TouchableCVCell {
+final class TopCVCell: UICollectionViewCell {
     
     private lazy var mainStack: UIStackView = {
         return .getStack(axis: .horizontal, distribution: .equalSpacing, align: .center, spacing: 10)
@@ -59,6 +59,16 @@ final class TopCVCell: TouchableCVCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            if isHighlighted {
+                shadowView.backgroundColor = .lightGray
+            } else {
+                shadowView.backgroundColor = .white
+            }
+        }
     }
     
     private func initCell(){
