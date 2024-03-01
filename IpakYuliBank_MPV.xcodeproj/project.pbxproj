@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041E49E42B92565E000438DC /* QuitAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49E32B92565E000438DC /* QuitAlert.swift */; };
 		044530512B683A29000E830B /* MyHomeCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530502B683A29000E830B /* MyHomeCvCell.swift */; };
 		044530532B6841CA000E830B /* MyHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530522B6841CA000E830B /* MyHomeHeader.swift */; };
 		044530552B684493000E830B /* LabelPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530542B684493000E830B /* LabelPlusButton.swift */; };
@@ -35,6 +36,7 @@
 		045FD9482B6ADECD007E8FED /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FD9472B6ADECC007E8FED /* ProfileView.swift */; };
 		045FD94A2B6ADED5007E8FED /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FD9492B6ADED5007E8FED /* ProfilePresenter.swift */; };
 		045FD94C2B6AE8C8007E8FED /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FD94B2B6AE8C8007E8FED /* UserView.swift */; };
+		046BC0E62B87477A00785CB9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BC0E52B87477A00785CB9 /* CustomSegmentedControl.swift */; };
 		046D9CDA2B61283400370BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D9CD92B61283400370BA3 /* AppDelegate.swift */; };
 		046D9CE32B61283600370BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046D9CE22B61283600370BA3 /* Assets.xcassets */; };
 		046D9CE62B61283600370BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046D9CE42B61283600370BA3 /* LaunchScreen.storyboard */; };
@@ -72,6 +74,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041E49E32B92565E000438DC /* QuitAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitAlert.swift; sourceTree = "<group>"; };
 		044530502B683A29000E830B /* MyHomeCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeCvCell.swift; sourceTree = "<group>"; };
 		044530522B6841CA000E830B /* MyHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeHeader.swift; sourceTree = "<group>"; };
 		044530542B684493000E830B /* LabelPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPlusButton.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 		045FD9472B6ADECC007E8FED /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		045FD9492B6ADED5007E8FED /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		045FD94B2B6AE8C8007E8FED /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		046BC0E52B87477A00785CB9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		046D9CD62B61283400370BA3 /* IpakYuliBank_MPV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IpakYuliBank_MPV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046D9CD92B61283400370BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		046D9CE22B61283600370BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -387,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				04CCF39B2B7A196500CAAE85 /* CardAndWalletsVC.swift */,
+				046BC0E52B87477A00785CB9 /* CustomSegmentedControl.swift */,
 			);
 			path = cardsAndWallets;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				045FD94B2B6AE8C8007E8FED /* UserView.swift */,
 				04D12C4F2B6B945D00700282 /* IdentificationView.swift */,
 				04D12C522B6B9F4D00700282 /* SameCellButView.swift */,
+				041E49E32B92565E000438DC /* QuitAlert.swift */,
 			);
 			path = subitems;
 			sourceTree = "<group>";
@@ -577,6 +583,7 @@
 				045FD9482B6ADECD007E8FED /* ProfileView.swift in Sources */,
 				04D12C832B7125DF00700282 /* NotificationsView.swift in Sources */,
 				046D9CF42B61292200370BA3 /* AsosiyVC.swift in Sources */,
+				046BC0E62B87477A00785CB9 /* CustomSegmentedControl.swift in Sources */,
 				046D9D032B6138B900370BA3 /* AsosiyView.swift in Sources */,
 				04D12CB72B7377A900700282 /* PaymentVC.swift in Sources */,
 				044530602B690DE5000E830B /* PhoneNumberCvCell.swift in Sources */,
@@ -610,6 +617,7 @@
 				044530692B693E54000E830B /* UsefulHeader.swift in Sources */,
 				044530622B690DF3000E830B /* PhoneNumberHeader.swift in Sources */,
 				044530762B69938F000E830B /* TransactionHistoryHeader.swift in Sources */,
+				041E49E42B92565E000438DC /* QuitAlert.swift in Sources */,
 				0445307B2B699817000E830B /* MyCardsHeader.swift in Sources */,
 				046D9D012B61364F00370BA3 /* Ex+Constraints.swift in Sources */,
 				045FD94A2B6ADED5007E8FED /* ProfilePresenter.swift in Sources */,

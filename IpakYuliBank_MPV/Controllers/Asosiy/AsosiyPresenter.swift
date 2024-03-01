@@ -145,9 +145,9 @@ extension AsosiyPresenter: MyHomeHeaderDelegate {
         case .cardsAndWallet:
             viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
         case .credits:
-            viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
+            viewController?.navigationController?.pushViewController(CreditsVC(), animated: true)
         case .deposits:
-            viewController?.navigationController?.pushViewController(CardAndWalletsVC(), animated: true)
+            viewController?.navigationController?.pushViewController(DepositsVC(), animated: true)
         }
     }
 }
