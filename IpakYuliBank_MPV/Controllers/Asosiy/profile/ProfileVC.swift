@@ -7,7 +7,10 @@
 
 import UIKit
 
+
+
 final class ProfileVC: UIViewController {
+    
 
     private lazy var scrollView: UIScrollView = {
         let sV = UIScrollView()
@@ -39,11 +42,15 @@ final class ProfileVC: UIViewController {
     let changePass: SameCellButView = .init(imgName: "lock", title: "Parolni o'zgartirish")
     let devices: SameCellButView = .init(imgName: "hearingdevice.and.signal.meter", title: "Qurilmalar")
     
+    let quitAlert = QuitAlert(frame: .init(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         seUpNavigation()
         setUpUI()
+        
+
         
     }
     
@@ -97,6 +104,9 @@ final class ProfileVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         identifierView.addGestureRecognizer(tap)
         identifierView.isUserInteractionEnabled = true
+        
+        view.addSubview(quitAlert)
+
     }
     
     @objc private func leftBtnTapped() {
@@ -105,9 +115,22 @@ final class ProfileVC: UIViewController {
     
     @objc private func logOutBtnTapped() {
         
+        quitAlert.delegate = self
+        
+        UIView.animate(withDuration: 0.4) { [self] in
+            quitAlert.frame = .init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        }
     }
     
     @objc func handleTap() {
          print("view tapped")
       }
+}
+
+extension ProfileVC: QuitAlertProtocol {
+    func didNoButtonTapped() {
+        UIView.animate(withDuration: 0.4) { [self] in
+            quitAlert.frame = .init(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        }
+    }
 }

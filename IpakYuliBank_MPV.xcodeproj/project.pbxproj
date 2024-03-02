@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		041E49E42B92565E000438DC /* QuitAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49E32B92565E000438DC /* QuitAlert.swift */; };
+		041E49E62B92738D000438DC /* AboutUserInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49E52B92738D000438DC /* AboutUserInformationVC.swift */; };
 		044530512B683A29000E830B /* MyHomeCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530502B683A29000E830B /* MyHomeCvCell.swift */; };
 		044530532B6841CA000E830B /* MyHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530522B6841CA000E830B /* MyHomeHeader.swift */; };
 		044530552B684493000E830B /* LabelPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530542B684493000E830B /* LabelPlusButton.swift */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		041E49E32B92565E000438DC /* QuitAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitAlert.swift; sourceTree = "<group>"; };
+		041E49E52B92738D000438DC /* AboutUserInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUserInformationVC.swift; sourceTree = "<group>"; };
 		044530502B683A29000E830B /* MyHomeCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeCvCell.swift; sourceTree = "<group>"; };
 		044530522B6841CA000E830B /* MyHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeHeader.swift; sourceTree = "<group>"; };
 		044530542B684493000E830B /* LabelPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPlusButton.swift; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 				04D12C4F2B6B945D00700282 /* IdentificationView.swift */,
 				04D12C522B6B9F4D00700282 /* SameCellButView.swift */,
 				041E49E32B92565E000438DC /* QuitAlert.swift */,
+				041E49E52B92738D000438DC /* AboutUserInformationVC.swift */,
 			);
 			path = subitems;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				04CCF39C2B7A196500CAAE85 /* CardAndWalletsVC.swift in Sources */,
 				04D12CB52B736F4400700282 /* SettingCVCell.swift in Sources */,
 				04D12C5A2B6C056C00700282 /* NotificationPresenter.swift in Sources */,
+				041E49E62B92738D000438DC /* AboutUserInformationVC.swift in Sources */,
 				044530712B698AE7000E830B /* MainVCDataModel.swift in Sources */,
 				04D12C5F2B6C0D7A00700282 /* NewsCell.swift in Sources */,
 				044530842B6A4208000E830B /* TopCVCell.swift in Sources */,
