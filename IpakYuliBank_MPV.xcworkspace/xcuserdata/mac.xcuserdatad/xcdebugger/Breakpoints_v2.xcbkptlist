@@ -49,6 +49,21 @@
                   endingLineNumber = "120"
                   offsetFromSymbolStart = "1516">
                </Location>
+               <Location
+                  uuid = "5794AD3C-17F7-475A-9C19-C6B07925EF8E - 67099ecd9c4697b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IpakYuliBank_MPV.MyHomeHeader.setupUI() -&gt; ()"
+                  moduleName = "IpakYuliBank_MPV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/PracticeMakesPerfect/IpakYuliBank_MVP/IpakYuliBank_MPV/Controllers/Asosiy/myHome/MyHomeHeader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "1532">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

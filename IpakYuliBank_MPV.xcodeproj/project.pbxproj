@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		041E49E42B92565E000438DC /* QuitAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49E32B92565E000438DC /* QuitAlert.swift */; };
 		041E49E62B92738D000438DC /* AboutUserInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49E52B92738D000438DC /* AboutUserInformationVC.swift */; };
+		041E49E82B931142000438DC /* InfoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49E72B931142000438DC /* InfoUser.swift */; };
+		041E49EC2B9321A4000438DC /* ChangePhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49EB2B9321A4000438DC /* ChangePhoneNumberVC.swift */; };
+		041E49F02B9386BB000438DC /* AlertNumberChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49EF2B9386BB000438DC /* AlertNumberChange.swift */; };
+		041E49F22B93C57C000438DC /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49F12B93C57C000438DC /* Database.swift */; };
+		041E49F42B93C5B2000438DC /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49F32B93C5B2000438DC /* Keys.swift */; };
+		041E49F62B948CFB000438DC /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E49F52B948CFB000438DC /* ChangePasswordVC.swift */; };
 		044530512B683A29000E830B /* MyHomeCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530502B683A29000E830B /* MyHomeCvCell.swift */; };
 		044530532B6841CA000E830B /* MyHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530522B6841CA000E830B /* MyHomeHeader.swift */; };
 		044530552B684493000E830B /* LabelPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044530542B684493000E830B /* LabelPlusButton.swift */; };
@@ -77,6 +83,12 @@
 /* Begin PBXFileReference section */
 		041E49E32B92565E000438DC /* QuitAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitAlert.swift; sourceTree = "<group>"; };
 		041E49E52B92738D000438DC /* AboutUserInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUserInformationVC.swift; sourceTree = "<group>"; };
+		041E49E72B931142000438DC /* InfoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUser.swift; sourceTree = "<group>"; };
+		041E49EB2B9321A4000438DC /* ChangePhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhoneNumberVC.swift; sourceTree = "<group>"; };
+		041E49EF2B9386BB000438DC /* AlertNumberChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNumberChange.swift; sourceTree = "<group>"; };
+		041E49F12B93C57C000438DC /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		041E49F32B93C5B2000438DC /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		041E49F52B948CFB000438DC /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		044530502B683A29000E830B /* MyHomeCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeCvCell.swift; sourceTree = "<group>"; };
 		044530522B6841CA000E830B /* MyHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeHeader.swift; sourceTree = "<group>"; };
 		044530542B684493000E830B /* LabelPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPlusButton.swift; sourceTree = "<group>"; };
@@ -225,6 +237,8 @@
 			children = (
 				044530702B698AE7000E830B /* MainVCDataModel.swift */,
 				04D12CB02B736B5D00700282 /* OtherVCDataModel.swift */,
+				041E49F12B93C57C000438DC /* Database.swift */,
+				041E49F32B93C5B2000438DC /* Keys.swift */,
 			);
 			path = DM;
 			sourceTree = "<group>";
@@ -406,6 +420,10 @@
 				04D12C522B6B9F4D00700282 /* SameCellButView.swift */,
 				041E49E32B92565E000438DC /* QuitAlert.swift */,
 				041E49E52B92738D000438DC /* AboutUserInformationVC.swift */,
+				041E49E72B931142000438DC /* InfoUser.swift */,
+				041E49EB2B9321A4000438DC /* ChangePhoneNumberVC.swift */,
+				041E49EF2B9386BB000438DC /* AlertNumberChange.swift */,
+				041E49F52B948CFB000438DC /* ChangePasswordVC.swift */,
 			);
 			path = subitems;
 			sourceTree = "<group>";
@@ -571,9 +589,11 @@
 				047271E92B613DB300BC6443 /* PaddingTextField.swift in Sources */,
 				044530792B69980A000E830B /* MyCardsCvCell.swift in Sources */,
 				046D9CF62B61292D00370BA3 /* ServicesVC.swift in Sources */,
+				041E49F02B9386BB000438DC /* AlertNumberChange.swift in Sources */,
 				0445306E2B694427000E830B /* FavoritesCvCell.swift in Sources */,
 				04B4580F2B84A70200153969 /* CreditsVC.swift in Sources */,
 				04D12CB32B736F2300700282 /* InfoCVCell.swift in Sources */,
+				041E49F22B93C57C000438DC /* Database.swift in Sources */,
 				0445305C2B685375000E830B /* BankServiceHeader.swift in Sources */,
 				046D9CFA2B61294400370BA3 /* AyirboshlashVC.swift in Sources */,
 				044530742B699383000E830B /* TransactionHistoryCvCell.swift in Sources */,
@@ -585,11 +605,13 @@
 				04D12C562B6C055400700282 /* NotificationVC.swift in Sources */,
 				045FD9482B6ADECD007E8FED /* ProfileView.swift in Sources */,
 				04D12C832B7125DF00700282 /* NotificationsView.swift in Sources */,
+				041E49F42B93C5B2000438DC /* Keys.swift in Sources */,
 				046D9CF42B61292200370BA3 /* AsosiyVC.swift in Sources */,
 				046BC0E62B87477A00785CB9 /* CustomSegmentedControl.swift in Sources */,
 				046D9D032B6138B900370BA3 /* AsosiyView.swift in Sources */,
 				04D12CB72B7377A900700282 /* PaymentVC.swift in Sources */,
 				044530602B690DE5000E830B /* PhoneNumberCvCell.swift in Sources */,
+				041E49EC2B9321A4000438DC /* ChangePhoneNumberVC.swift in Sources */,
 				0445306C2B69441B000E830B /* FavoritesHeader.swift in Sources */,
 				04D12CAF2B73696700700282 /* SettingHeader.swift in Sources */,
 				04CCF3902B752A7400CAAE85 /* TouchableCVCell.swift in Sources */,
@@ -614,6 +636,8 @@
 				044530552B684493000E830B /* LabelPlusButton.swift in Sources */,
 				047271EB2B613DC700BC6443 /* Ex+UIStackView.swift in Sources */,
 				04D12CBB2B7377C000700282 /* PaymentsView.swift in Sources */,
+				041E49F62B948CFB000438DC /* ChangePasswordVC.swift in Sources */,
+				041E49E82B931142000438DC /* InfoUser.swift in Sources */,
 				04D12C532B6B9F4D00700282 /* SameCellButView.swift in Sources */,
 				04D12CB92B7377B400700282 /* PaymentsPresenter.swift in Sources */,
 				04D12CB12B736B5D00700282 /* OtherVCDataModel.swift in Sources */,

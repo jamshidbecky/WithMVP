@@ -95,9 +95,17 @@ final class ProfileVC: UIViewController {
         mainStack.addArrangedSubview(user)
         mainStack.addArrangedSubview(identifierView)
         mainStack.addArrangedSubview(userInfo)
+        let userInfoTapped = UITapGestureRecognizer(target: self, action: #selector(userInfoPressed))
+        userInfo.addGestureRecognizer(userInfoTapped)
+        
         mainStack.addArrangedSubview(changeNumber)
+        let changeNumberTapped = UITapGestureRecognizer(target: self, action: #selector(changeNumberPressed))
+        changeNumber.addGestureRecognizer(changeNumberTapped)
+        
         mainStack.addArrangedSubview(changeEmail)
         mainStack.addArrangedSubview(changePass)
+        let changePassTapped = UITapGestureRecognizer(target: self, action: #selector(changePassPressed))
+        changePass.addGestureRecognizer(changePassTapped)
         mainStack.addArrangedSubview(devices)
         
         
@@ -124,7 +132,22 @@ final class ProfileVC: UIViewController {
     
     @objc func handleTap() {
          print("view tapped")
-      }
+    }
+    
+    @objc private func userInfoPressed() {
+        let vc = AboutUserInformationVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func changeNumberPressed() {
+        let vc = ChangePhoneNumberVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func changePassPressed() {
+        let vc = ChangePasswordVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension ProfileVC: QuitAlertProtocol {
